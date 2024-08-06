@@ -24,7 +24,8 @@ jobs:
     - name: Prepare the environment
       run: |
         sudo apt update
-        sudo apt -y install python python3 python-pip3 python-pip cpio wget python2-minimal python2 dh-python python-is-python3
+        sudo apt-get upgrade
+        sudo apt-install -y install python python3 python-pip3 python-pip cpio wget 
       
     - name: Set variables
       run: |
